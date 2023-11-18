@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITSoft Conseil</title>
+	<style type="text/css" media="all">
+@import url("pace-theme-center-circle32e3.css?p5xsdm");
+</style>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Skills Circle CSS  -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
+    
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Google Fonts Raleway -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700" rel="stylesheet">
+	<!-- Google Fonts Open sans -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
+ 
+ 
+	</head>
+  <body>
+
+   <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+  	
+  	<!-- Start Header -->
+	<header id="mu-hero">
+		<div id="mymenu" style="max-width: 1050px;"  class="container">
+			<nav class="navbar navbar-expand-lg navbar-light mu-navbar">
+				<!-- Text based logo -->
+				<a class="navbar-brand mu-logo" href="index.html"><img src="itsftc2.png" style="display: block; width: 80px; height: 90px;"></a>
+				<!-- image based logo -->
+			   	<!-- <a class="navbar-brand mu-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="fa fa-bars"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto mu-navbar-nav">
+			      <li class="nav-item">
+			        <a href="index.html">Accueil</a>
+			      </li>
+				  
+	 
+			      <li class="nav-item active"><a onClick="history.go(0)">Juridique</a></li>
+			      <li class="nav-item"><a href="comptabilite.html">Comptabilité</a></li>
+			      <li class="nav-item"><a href="ressources-humaines.html">Ressources humaines</a></li>
+			        <li class="nav-item"><a href="contact.html">Contact</a></li>
+					<li id="pltfrm" class="nav-item dropdown">
+        <a class="nav-item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <i class="fa fa-pencil " aria-hidden="true"></i> Plateforme en ligne
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal1">Création Société</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal2">Modification Société</a>
+          
+        </div>
+      </li>
+					<li class="nav-item"><a href="" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-user " aria-hidden="true"></i></a></li>
+					<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onmousemove="myFunction()">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Entrer votre login et votre mot de passe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+											             
+													<center><label for="email">Email:</label></br>
+        <input type="text" placeholder="E-mail" id="mail" class="fields" size="20"></br>
+		<label for="email">Mot de passe:</label></br>
+        <input type="password" placeholder="mot de passe" class="fields" size="20"></center>			
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+	  
+        <button type="button" class="btn btn-primary " id="btn" data-toggle="modal" data-target="#exampleModal3" data-dismiss="modal" aria-label="Close">Se Connecter</button>
+		<button type="button" class="btn btn-success " onclick="location.href='inscription.html';">S'inscrire</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> etes vous un consultant?</h5>
+        
+      </div>
+      
+      <div class="modal-footer">
+		<button type="button" class="btn btn-success" onclick="location.href='consultant.html?'+document.getElementById('mail').value;">oui</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="location.href='client.html?'+document.getElementById('mail').value;">non</button>
+      </div>
+    </div>
+  </div>
+</div>
+	</ul>
+			  </div>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- End Header -->
+
+	
+
+	<!-- Start Breadcrumb -->
+	<div id="mu-breadcrumb">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav aria-label="breadcrumb" role="navigation">
+					  <ol class="breadcrumb mu-breadcrumb">
+					    <li class="breadcrumb-item"><a href="#">Home</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">Juridique</li>
+					  </ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumb -->
+
+	
+	<!-- Start main content -->
+	<main>
+		<!-- Start About -->
+		<section id="mu-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-about-area">
+							<!-- Title -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="mu-title">
+										<h2 style="color: #006EBA;
+    font-size: 50px;
+    font-weight: bold;">Juridique</h2>
+										
+									</div>
+								</div>
+							</div>
+							<!-- Start Feature Content -->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="mu-about-left">
+										
+										<ul>
+											<li>
+												<h3>Création d'entreprise​</h3>
+												<p>
+												Rédaction des statuts<br>
+Enregistrement des actes<br>
+Dépôt du dossier au CFE
+												</p>
+											</li>
+											<li>
+												<h3>Modifications juridiques</h3>
+												<p>
+												Rédaction des AGE et AGO<br>
+Publication et enregistrement<br>
+Dépôt du dossier au CFE
+												</p>
+											</li>
+											<li>
+												<h3>Dissolution Liquidation</h3>
+												<p>
+												Rédaction des actes<br>
+Enregistrement et publication<br>
+Préparation des compte de clôture
+												</p>
+											</li>
+										</ul>
+										
+	 
+
+									</div>
+								</div>
+								<a href="#"></a><div id="float:left;
+width=20px;"></div><a href="#"></a>
+								<div class="col-md-6">
+									<div  class="mu-about-right">
+									
+										<img style="box-shadow: 
+3em -2.5em 0em #006EBA;position: relative;  " class="" src="balance.jpg" alt="img">
+									</div>
+								</div>
+							</div>
+							<!-- End Feature Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About -->
+
+		
+
+		<!-- Start Team -->
+		<section id="mu-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-team-area">
+							<!-- Title -->
+							<div class="row">
+								<div class="col-lg-12">
+									<div style="font-family: Helvetica Neue,Helvetica,Arial,sans-serif;font-size: 18px;text-align: left;  color:#717070;" class="mu-title">
+										
+										
+<p>ITSoft Conseil offre toutes les prestations nécessaires à la gestion juridique, sociale et fiscale des entreprises tant au niveau national qu’international. 
+      Nous établissons toutes les déclarations fiscales et administratives des entreprises, mais également de leurs dirigeants. 
+      
+      <br>
+      <br>
+      Nous intervenons également pour toute constitution ou transformation d’entreprise dans un souci de recherche de solutions fiscales optimales, et ce dans le respect de la législation en vigueur. 
+      <br>
+      <br>
+      ITSoft Conseil propose également un accompagnement global en matière d’acquisition, de cession et de transmission d’entreprise. 
+      Nous conseillons le chef d’entreprise sur son patrimoine privé en matière de dispositions financières légales et fiscales, afin d’améliorer la gestion de son patrimoine privé ou d’assurer sa transmission.</p>
+									<center><button style="border-radius: 0px; background-color: #006EBA;" type="submit" class="btn btn-primary btn-lg" onclick="window.location.href='contact.html';"><span>
+      Demander un devis gratuitement</span></button></center>
+									</div>
+									
+								</div>
+							</div>
+							
+											
+											
+							<!-- End Team Content -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Team -->
+
+		
+
+	</main>
+	
+	<!-- End main content -->	
+			
+			
+	<!-- Start footer -->
+	<footer id="mu-footer">
+		<div class="mu-footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="mu-single-footer">
+							<img class="mu-footer-logo" src="logo1.png" alt="logo">
+							
+							<div class="mu-social-media">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a class="mu-twitter" href="#"><i class="fa fa-twitter"></i></a>
+								<a class="mu-github" href="https://github.com/alouirami"><i class="fa fa-github"></i></a>
+								<a class="mu-google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+								<a class="mu-youtube" href="#"><i class="fa fa-youtube"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="mu-single-footer">
+							<h3>ITSoft Conseil</h3>
+							<ul class="list-unstyled">
+							  	<li class="media">
+								    <div class="media-body">
+								    	<p>
+Domiciliation-Juridique-Comptabilité-Gestion RH-Création Sites web-Création de sigles-Création de cartes visite et Formulaires</p>
+								    </div>
+							  	</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="mu-single-footer">
+							
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="mu-single-footer">
+							<h3>Contact Information</h3>
+							<ul class="list-unstyled">
+							  <li class="media">
+							    <span class="fa fa-home"></span>
+							    <div class="media-body">
+							    	<p>4, RUE LENEVEUX 75014 PARIS - France</p>
+							    </div>
+							  </li>
+							  <li class="media">
+							    <span class="fa fa-phone"></span>
+							    <div class="media-body">
+							       <p>Tel: +33 9 73 89 42 37</p>
+							     	<p>Fax: +33 9 73 89 52 37</p>
+							    </div>
+							  </li>
+							  <li class="media">
+							    <span class="fa fa-envelope"></span>
+							    <div class="media-body">
+							     <p>R.S: ITSOFTCONSEIL SIRET:53454442400037</p>
+							    </div>
+							  </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mu-footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-footer-bottom-area">
+							<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="https://itsoft-conseil.net/">itsoft-conseil.net</a>. All right reserved.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div  class="modal-dialog" role="document">
+    <div style=" background: rgba(0, 0, 0, 0); border: hidden;    border-style: hidden;"  class="modal-content">
+     
+      <div class="modal-body">
+       <center>
+		<a href="Creation-Sarl.html"><button type="button" style="border-radius: 0px; width:150px;" class="btn btn-secondery mx-auto" id="btn"  >Création SARL</button></a>
+		</br></br>
+		<a href="Création-EURL.html"><button type="button" style="border-radius: 0px; width:150px;" class="btn btn-secondery mx-auto" id="btn"  >Création EURL</button></a>
+		</br></br>
+		<a href="Création-SAS.html"><button type="button" style="border-radius: 0px; width:150px;" class="btn btn-secondery mx-auto" id="btn"  >Création SAS</button></a>
+		</br></br>
+		<a href="Création-SASU.html"><button type="button" style="border-radius: 0px; width:150px;" class="btn btn-secondery mx-auto" id="btn"  >Création SASU</button></a>
+		</br></br>
+		<a href="Création-SCI.html"><button type="button" style="border-radius: 0px; width:150px;" class="btn btn-secondery mx-auto" id="btn"  >Création SCI</button></a>
+		</center>									             
+																
+      </div>
+      
+    </div>
+  </div>
+</div>
+	  
+	  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div  class="modal-dialog" role="document">
+    <div style=" background: rgba(0, 0, 0, 0);border: hidden;    border-style: hidden;"  class="modal-content">
+     
+      <div class="modal-body">
+       <center>
+		<a href="Modification-Société.html"><button type="button" style="border-radius: 0px; width:252px;" class="btn btn-secondery mx-auto" id="btn"  >Transfert de siège</button></a>
+		</br></br>
+		<a href="Modification-Société.html"><button type="button" style="border-radius: 0px; width:252px;" class="btn btn-secondery mx-auto" id="btn"  >Changement de nom</button></a>
+		</br></br>
+		<a href="Modification-Société.html"><button type="button" style="border-radius: 0px; width:252px;" class="btn btn-secondery mx-auto" id="btn"  >Changement de dirigeant</button></a>
+		</br></br>
+		<a href="Modification-Société.html"><button type="button" style="border-radius: 0px; width:252px;" class="btn btn-secondery mx-auto" id="btn"  >Cession de parts</button></a>
+		</br></br>
+		<a href="Modification-Société.html"><button type="button" style="border-radius: 0px; width:252px;" class="btn btn-secondery mx-auto" id="btn"  >Modification d’activité</button></a>
+		</br></br>
+		<a href="Modification-Société.html"><button type="button" style="border-radius: 0px; width:252px;" class="btn btn-secondery mx-auto" id="btn"  >Changement de date de clôture</button></a>
+		</center>									             
+																
+      </div>
+      
+    </div>
+  </div>
+</div>
+	<!-- End footer -->
+
+	<!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script type="text/javascript" src="pace.min32e3.js?p5xsdm"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- Progress Bar -->
+    <script src="https://unpkg.com/circlebars@1.0.3/dist/circle.js"></script>
+  
+
+	<!-- About us Skills Circle progress  -->
+	<script>
+		// First circle
+	    new Circlebar({
+        element : "#circle-1",
+        type : "progress",
+	      maxValue:  "90"
+	    });
+		
+		// Second circle
+	    new Circlebar({
+        element : "#circle-2",
+        type : "progress",
+	      maxValue:  "84"
+	    });
+
+	    // Third circle
+	    new Circlebar({
+        element : "#circle-3",
+        type : "progress",
+	      maxValue:  "60"
+	    });
+
+	    // Fourth circle
+	    new Circlebar({
+        element : "#circle-4",
+        type : "progress",
+	      maxValue:  "74"
+	    });
+
+	</script>
+    <script type="text/javascript"> 
+	document.getElementById("pltfrm").style.display = "none";
+function hide() { document.getElementById("pltfrm").style.display = "none";
+   }
+
+window.addEventListener('keydown', display);
+
+function display(event){
+   if(event.keyCode == '65'){
+
+     document.getElementById("pltfrm").style.display = "";
+	 setTimeout(hide, 4000); 
+   }
+   
+}
+	document.getElementById("btn").disabled = true; 
+	function myFunction() {
+    if (document.getElementById("mail").value.indexOf('@itsoft-conseil.net') >= 0) {
+   document.getElementById("btn").disabled = false; 
+	 
+    } 
+
+};
+</script>
+  </body>
+</html>
